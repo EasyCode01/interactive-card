@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/thankyou.css">
+
+</head>
+<body>
+   <div class="thankyou">
+        <div class="thankyou__content">
+            <div class="thankyou__content__logo">
+                <i style="color:#fff; font-size: 40px;" class="bi bi-check-lg"></i>
+            </div>
+            <h3>THANK YOU</h3>
+            <P>We've added your card details</P>
+            <button class="btn">Continue</button>
+        </div>
+   </div> 
+
+   <script>
+    document.querySelector('.btn').onclick = function(){
+       setTimeout(()=>{
+           window.location.href = './index.html'
+
+       }, 300)
+    }
+   </script>
+</body>
+</html>

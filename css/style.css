@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+   
+}
+
+
+:root{
+
+    --primary:#fff;
+    --secondary:purple;
+    --dark:#000;
+    --danger:red;
+    --off-white:#e4e5e9;
+
+    --bg-gradient-1:#942382;
+    --bg-gradient-2:#142384;
+
+    --spacing-1:50px;
+    --spacing-2:30px;
+    --spacing-3:20px;
+    --spacing-4:10px;
+
+    --fs--1: 30px;
+    --fs--2:20px;
+   
+
+
+    --border-radius-1:15px;
+    --border-radius-2:10px;
+    --border-radius-3:6px;
+    --border-radius-50:50%;
+
+    --relative:relative;
+    --absolute:absolute;
+
+}
+
+.d-flex{
+    display: flex;
+    
+}
+
+.d-flex-2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container{
+    height: 100vh;
+    
+
+
+}
+
+.container__left{
+    height: 100%;
+    flex: 1;
+    position:var(--relative);
+    background: linear-gradient(150deg, #240932, #411351, #312b5b, #220930);
+}
+
+/* front-card */
+
+.container__left .card__front__view{
+    position: var(--absolute);
+    width: 300px;
+    min-width: 30%;
+    height: 30%;
+    border-radius: var(--border-radius-2);
+    background: linear-gradient(150deg, #6342f3, #a641de, #e3726a, #6b1092);
+    top:13%;
+    left:50%;
+    padding: var(--spacing-3);
+
+}
+
+.card__front__view__top{
+    gap: var(--spacing-4);
+    align-items: center;
+}
+
+.card__front__view__top .big__circle{
+    width:35px;
+    height: 35px;
+    border-radius: var(--border-radius-50);
+    background-color: var(--primary);
+}
+.card__front__view__top .small__circle{
+    width:10px;
+    height: 10px;
+    border: 1px solid var(--primary);
+    border-radius: var(--border-radius-50);
+    
+}
+
+.card__front__view{
+    justify-content: space-between;
+}
+
+.card__front__view__bottom{
+    gap:var(--spacing-4);
+}
+
+.card__front__view__bottom .card__number{
+    color:var(--primary);
+    letter-spacing: 2px;
+    font-size: var(--fs--2);
+}
+
+.card__front__view__bottom .card__name__month__year{
+    justify-content: space-between;
+    color: var(--primary);
+}
+
+
+.container__left .card__back__view{
+    position: var(--absolute);
+    bottom: 20%;
+    left: 65%;
+    height: 30%;
+    width: 300px;
+    min-width: 30%;
+    background-color: var(--off-white);
+    border-radius: var(--border-radius-2);
+    gap: var(--spacing-4);
+    
+    
+    
+}
+
+.card__back__view .card__back__view__top{
+    background-color: var(--dark);
+    height: 20%;
+    margin-top: var(--spacing-3);
+}
+
+.card__back__view .card__back__view__center{
+    width: 90%;
+    border-radius: 3px;
+    text-align: right;
+    color:#fff;
+    font-size: 13px;
+    line-height: 1.2;
+    padding: 2px 0px 5px 0;
+    letter-spacing: 2px;
+    height: 12%;
+    margin: auto;
+    background-color: #adb6bf;
+    margin-top: var(--spacing-3);
+}
+
+.card__back__view__bottom{
+    gap:5px;
+    align-items: center;
+    margin-top: var(--spacing-3);
+}
+
+.card__back__view__bottom .card__back__view__bottom__1,
+.card__back__view__bottom .card__back__view__bottom__2,
+.card__back__view__bottom .card__back__view__bottom__3{
+    gap:5px;
+
+}
+
+.extra__lg__line{
+    border-radius: 20px;
+    background-color: #adb6bf;
+    width: 50px;
+    height: 2px;
+}
+
+.lg__line{
+    width: 40px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #adb6bf;
+
+}
+
+.medium__line{
+    width: 30px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #adb6bf;   
+}
+
+.small__line{
+    width: 10px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #adb6bf;   
+
+}
+
+
+/* Container right */
+.container__right{
+    height: 100%;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__right .card__form{
+    width: 380px;
+    margin-left: 60px;
+    gap:15px;
+    padding: 20px;
+   
+}
+
+.card__form__text__field{   
+    gap:3px;
+}
+
+.card__form__text__field label{
+    font-size:12px;
+    font-weight: 700;
+}
+
+.card__form__text__field input{
+    border-radius: var(--border-radius-3);
+    border: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    font-size: 16.3px;
+}
+
+.card__form__text__field input:focus{
+    outline: 1px solid #e0e0e0;
+    border: none;
+}
+
+.exp__date__input{
+    gap:var(--spacing-4);
+    margin-top: 5px;
+}
+
+.exp__date__input input{
+    width: 50px;
+    font-size: 14px;
+    padding: 5px 10px;
+   
+}
+
+.exp__month__cvc{
+    gap:var(--spacing-3);
+    width: 100%;
+    
+}
+
+.card__form__text__field__cvc input{
+    width:100%;
+}
+
+#result{
+    position: fixed;
+    left: 40%;
+    top:5%;   
+}
+
+.btn{
+    width: 100%;
+    padding:12px;
+    border-radius: var(--border-radius-2);
+    color: #fff;
+    background-color: #220930;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+
+}
+
+.btn:active{
+    transform: translateY(2px);
+}
+
+.exp__date__input{
+    position: relative;
+}
+
+.stb{
+    position: absolute;
+    top:30px;
+}
+
+.stb2{
+    position: absolute;
+    right: 15px;
+    top:30px
+}
+
+/* toast */
+
+.toast__notify{
+    padding: 10px;
+    border-radius: var(--border-radius-2);
+    position: fixed;
+    top:5%;
+    /* width: 230px; */
+    right:5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:var(--spacing-2);
+    background-color:#6342f3;
+    box-shadow: 1px 3px 6px rgba(0,0,0,.5);
+    color:#fefcfc;
+    font-size: 16px;
+    transition: all 500ms ease-in-out;
+    z-index: 4;
+    transform: translateX(200%);
+    opacity: 0;
+}
+
+.toast__notify__visible{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.toast__notify.error{
+    background-color: rgb(246, 127, 127);
+}
+
+.toast__notify.info {
+    background-color: #6342f3;
+}
+
+.toast__notify.success{
+    background-color:rgb(20, 153, 20);
+}
+
+.toast__notify .close__toast{
+    font-size: 32px;
+    cursor: pointer;
+    user-select: none;
+    color:rgb(248, 10, 2);
+}
+
+.toast__notify .close__toast:active{
+    transform: scale(0.8);
+
+}
+
+
+
+/* Java script */
+
+.card__form__text__field input~span{
+    color:red;
+    font-size: 12px;
+    font-weight: 600;
+    word-spacing: 1px;
+    margin-left: 4px;
+    margin-top: 2px;
+    display: none;
+}
+
+.card__form__text__field input~p{
+    color:rgb(26, 199, 26);
+    font-size: 12px;
+    font-weight: 600;
+    word-spacing: 1px;
+    margin-left: 4px;
+    margin-top: 2px;
+    display: none;
+}
+
+.card__form__text__field input.valid{
+    outline: 2px solid rgb(7, 212, 7);
+}
+
+.card__form__text__field input.valid~p{
+    display: block;
+}
+
+.card__form__text__field input.invalid{
+    outline:2px solid red;
+}
+
+.card__form__text__field input.invalid~span{
+    display: block;
+}
+
+
+@media (max-width:1100px){
+
+    .container__left{
+        flex: 1;
+    }
+
+    .container__right{
+        flex:3;
+       
+        padding-top: 15px;
+    }
+
+    .container__left .card__front__view{
+       left: 15%;
+    }
+    .container__left .card__back__view {
+        left:40%;
+    }   
+
+    .container__right .card__form{
+        margin-left: 170px;
+    }
+
+    .card__form__text__field__cvc input{
+        width:100%;
+    }
+
+}
+
+@media (max-width:780px) {
+    .container {
+        flex-direction: column;
+        min-height: 110vh;
+    }
+
+    .container__left{
+        flex: 1;
+        
+    }
+
+    .container__left .card__front__view{
+        top:35%;
+        left:8%;
+        height: 43%;
+        width: 300px;
+        max-width: 85%;
+        z-index: 2;
+    }
+    
+    .container__left .card__back__view{
+        width: 300px;
+        max-width: 85%;
+        top:10%;
+        left:17%;
+        height: 43%;
+    }
+
+    .container__right {
+        flex: 1;
+    }
+
+    
+
+    .container__right .card__form{
+        margin-left: 0px;
+        width: 90%;
+    }
+
+    .card__form__text__field__cvc input{
+        width:100%;
+    }
+
+    
+
+
+}
+
+
+@media (max-width:370px){
+
+    .container__left .card__front__view{
+        left: 5%;
+    }
+
+    .container__left .card__back__view{
+        left:11%;
+    }
+    .card__form__text__field__cvc input{
+        width:100%;
+    }
+
+}
+

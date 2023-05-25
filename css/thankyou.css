@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.thankyou{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.thankyou .thankyou__content{
+    width: 500px;
+    max-width: 90%;
+    border: 2px solid #e3e3e3;
+    border-radius: 10px;
+    /* box-shadow: 2px 4px 6px rgba(0,0,0,.6), -2px -4px 6px rgba(0,0,0,.6) ; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    transition: all 300ms ease-in;
+
+}
+
+.thankyou .thankyou__content:hover{
+    box-shadow: 2px 4px 6px rgba(0,0,0,.6) ;
+    
+    
+}
+
+.thankyou__content .thankyou__content__logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(150deg, #602dd2, #6410a7);
+    color:#fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    width: 100%;
+    padding:12px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #220930;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+
+}
+
+.btn:active{
+    transform: translateY(2px);
+}
